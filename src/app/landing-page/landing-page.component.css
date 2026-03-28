@@ -1,9 +1,46 @@
-.image-container{
-    height: 70%;
+.landing-container{
+    height:85%;
     width: auto;
     display: flex;
+    margin: 0 2%;
+    gap: 1em;
 }
 
-.image-container>img{
+.landing-container>div{
     flex: 1;
+    gap: 1%;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-1{
+    background-image: url('/assets/landing-page/ireland41.jpg');
+    background-size: cover;
+}
+
+.image-2{
+    background-image: url('/assets/landing-page/leviathan23.jpg');
+    background-size: cover;
+}
+
+.image-link-label{
+    border: none;
+    background: rgba(0, 0, 0, 0.67);
+    color: white;
+    font-size: 2.25em;
+    padding: 0.5em 3em;
+    cursor: pointer;
+    outline: 3px solid currentColor;
+    transition-duration: 0.1s;
+}
+
+.image-link-label:hover{
+    background: rgba(0, 0, 0, 1);
+    outline: 4px solid currentColor;
+    transform: scale(1.05);
+    transition-duration: 0.1s;
 }
