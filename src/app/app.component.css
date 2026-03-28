@@ -1,0 +1,13 @@
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5em;
+}
+.nav-container{
+    display: flex;
+    gap: 1em;
+}
+.name{
+    font-size: 2em;
+}

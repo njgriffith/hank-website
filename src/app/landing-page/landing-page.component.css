@@ -1,0 +1,9 @@
+.image-container{
+    height: 70%;
+    width: auto;
+    display: flex;
+}
+
+.image-container>img{
+    flex: 1;
+}
