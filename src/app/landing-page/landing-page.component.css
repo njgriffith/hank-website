@@ -40,6 +40,7 @@
 
 .image-link-label:hover{
     background: rgba(0, 0, 0, 1);
+    color:coral;
     outline: 4px solid currentColor;
     transform: scale(1.05);
     transition-duration: 0.1s;

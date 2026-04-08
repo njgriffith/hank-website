@@ -1,0 +1,13 @@
+.scroll-container {
+  display: flex;
+  height: 100%;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  margin: 1.5em;
+  scrollbar-width: auto;
+}
+.scroll-container img {
+  flex: 0 0 auto;
+  padding: 10px;
+  height: 80%;
+}
