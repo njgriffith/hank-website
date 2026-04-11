@@ -1,13 +1,44 @@
-.scroll-container {
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-size: 4em;
+}
+
+.selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -30px;
+}
+
+h2 {
+    padding-left: 100px;
+    padding-right: 100px;
+    cursor: pointer;
+}
+
+h2:hover {
+    text-decoration: underline;
+    color: tomato;
+}
+
+.gallery {
   display: flex;
-  height: 100%;
-  overflow-x: scroll;
-  flex-wrap: nowrap;
+  justify-content: center;
+  height: 90%;
+  overflow-y: scroll;
+  flex-wrap: wrap;
   margin: 1.5em;
   scrollbar-width: auto;
 }
-.scroll-container img {
-  flex: 0 0 auto;
+
+.gallery img {
   padding: 10px;
-  height: 80%;
+  height: 60%;
 }
