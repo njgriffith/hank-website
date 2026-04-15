@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 1.5em 2%;
+    z-index: 5;
 }
 
 .nav-container{
@@ -15,44 +16,9 @@
     cursor: pointer;
 }
 
-.third-level-menu
-{
-    position: absolute;
-    top: 0;
-    right: -150px;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
+ul {
+    text-align: center;
 }
-
-.third-level-menu > li
-{
-    height: 30px;
-    background: #999999;
-}
-.third-level-menu > li:hover { background: tomato; }
-
-.second-level-menu
-{
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-.second-level-menu > li
-{
-    position: relative;
-    height: 30px;
-    background: rgb(88, 109, 57);
-}
-.second-level-menu > li:hover { background: rgb(154, 176, 121); }
 
 .top-level-menu
 {
@@ -77,6 +43,44 @@
     display: inline;
 }
 
+.second-level-menu
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.second-level-menu > li
+{
+    position: relative;
+    height: 30px;
+    background: rgb(88, 109, 57);
+}
+.second-level-menu > li:hover { background: rgb(154, 176, 121); }
+
+.third-level-menu
+{
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.third-level-menu > li
+{
+    height: 30px;
+    background: #999999;
+}
+.third-level-menu > li:hover { background: tomato; }
 
 /* Menu Link Styles */
 
