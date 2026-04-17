@@ -29,16 +29,16 @@ h2:hover {
 }
 
 .gallery {
-  display: flex;
-  justify-content: center;
-  height: 90%;
-  overflow-y: scroll;
-  flex-wrap: wrap;
-  margin: 1.5em;
-  scrollbar-width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 2em;
 }
 
 .gallery img {
-  padding: 10px;
-  height: 60%;
+    flex: 1;
+    padding: 10px;
+    height: 50%;
+    max-width: fit-content;
 }
