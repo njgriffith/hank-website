@@ -1,41 +1,8 @@
 <div class="banner">
     <h1>GREECE</h1>
 </div>
+
 <div class="gallery">
-    <img src="assets/ELLAS/ellas-01_.jpg">
-    <img src="assets/ELLAS/ellas-02_.jpg">
-    <img src="assets/ELLAS/ellas-03_.jpg">
-    <img src="assets/ELLAS/ellas-04_.jpg">
-    <img src="assets/ELLAS/ellas-05_.jpg">
-    <img src="assets/ELLAS/ellas-06_.jpg">
-    <img src="assets/ELLAS/ellas-07_.jpg">
-    <img src="assets/ELLAS/ellas-08_.jpg">
-    <img src="assets/ELLAS/ellas-09_.jpg">
-    <img src="assets/ELLAS/ellas-10_.jpg">
-    <img src="assets/ELLAS/ellas-11_.jpg">
-    <img src="assets/ELLAS/ellas-12_.jpg">
-    <img src="assets/ELLAS/ellas-13_.jpg">
-    <img src="assets/ELLAS/ellas-14_.jpg">
-    <img src="assets/ELLAS/ellas-15_.jpg">
-    <img src="assets/ELLAS/ellas-16_.jpg">
-    <img src="assets/ELLAS/ellas-17_.jpg">
-    <img src="assets/ELLAS/ellas-18_.jpg">
-    <img src="assets/ELLAS/ellas-19_.jpg">
-    <img src="assets/ELLAS/ellas-20_.jpg">
-    <img src="assets/ELLAS/ellas-21_.jpg">
-    <img src="assets/ELLAS/ellas-22_.jpg">
-    <img src="assets/ELLAS/ellas-23_.jpg">
-    <img src="assets/ELLAS/ellas-24_.jpg">
-    <img src="assets/ELLAS/ellas-25_.jpg">
-    <img src="assets/ELLAS/ellas-26_.jpg">
-    <img src="assets/ELLAS/ellas-27_.jpg">
-    <img src="assets/ELLAS/ellas-28_.jpg">
-    <img src="assets/ELLAS/ellas-29_.jpg">
-    <img src="assets/ELLAS/ellas-30_.jpg">
-    <img src="assets/ELLAS/ellas-31_.jpg">
-    <img src="assets/ELLAS/ellas-32_.jpg">
-    <img src="assets/ELLAS/ellas-33_.jpg">
-    <img src="assets/ELLAS/ellas-34_.jpg">
-    <img src="assets/ELLAS/ellas-35_.jpg">
-    <img src="assets/ELLAS/ellas-36_.jpg">
+    <img *ngFor="let img of imageKeys" [ngSrc]="'assets/' + images[img].src" [width]="images[img].width"
+        [height]="images[img].height" />
 </div>
