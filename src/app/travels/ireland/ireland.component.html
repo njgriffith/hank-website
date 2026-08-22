@@ -1,1 +1,7 @@
-<p>ireland works!</p>
+<div class="banner">
+    <h1>IRELAND</h1>
+</div>
+<div class="gallery">
+    <img *ngFor="let img of imageKeys" [ngSrc]="'assets/' + images[img].src" [width]="images[img].width"
+        [height]="images[img].height" />
+</div>

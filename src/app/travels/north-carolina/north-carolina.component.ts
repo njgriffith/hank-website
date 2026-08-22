@@ -1,25 +1,23 @@
-import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { ImageService } from '../../services/image.service';
-import { NgOptimizedImage } from '@angular/common';
+import { NgFor, NgOptimizedImage } from '@angular/common';
 
 @Component({
-  selector: 'app-greece',
+  selector: 'app-north-carolina',
   standalone: true,
   imports: [NgFor, NgOptimizedImage],
-  templateUrl: './greece.component.html',
-  styleUrl: './greece.component.css'
+  templateUrl: './north-carolina.component.html',
+  styleUrl: './north-carolina.component.css'
 })
-export class GreeceComponent {
+export class NorthCarolinaComponent {
   images: Record<string, any> = {};
   imageKeys: string[] = [];
 
-  constructor(private imageService: ImageService){}
-
-  ngOnInit(){
+  constructor(private imageService: ImageService) { }
+  ngOnInit() {
     this.imageService.images$.subscribe((images: Record<string, any>) => {
       this.images = Object.fromEntries(
-        Object.entries(images).filter(([key]) => key.startsWith('ELLAS'))
+        Object.entries(images).filter(([key]) => key.startsWith('Wisteria'))
       );
       this.imageKeys = Object.keys(this.images);
     });

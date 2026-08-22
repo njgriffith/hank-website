@@ -1,9 +1,33 @@
+
 <div class="banner">
-    <div class="name" routerLink="/">Hank Tilson</div>
-    <nav class="nav-container">
-        <div>Home</div>
-        <div>Work</div>
-        <div>About</div>
-    </nav>
+    <div class="name" routerLink="/">HANK TILSON</div>
+   <ul class="top-level-menu">
+    <li><a href="#" routerLink="/">Home</a></li>
+    <li>
+        <a href="#" routerLink="/">Work</a>
+        <ul class="second-level-menu">
+            <li>
+                <a href="#" routerLink="/travels">Travels</a>
+                <ul class="third-level-menu">
+                    <li><a href="#" routerLink="/travels/ireland">Ireland</a></li>
+                    <li><a href="#" routerLink="/travels/greece">Greece</a></li>
+                    <li><a href="#" routerLink="/travels/new-mexico">New Mexico</a></li>
+                    <li><a href="#" routerLink="/travels/italy">Italy</a></li>
+                    <li><a href="#" routerLink="/travels/north-carolina">North Carolina</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+                <ul class="third-level-menu">
+                    <li><a href="#">LEVIATHAN</a></li>
+                    <li><a href="#">Wisteria</a></li>
+                    <li><a href="#">Thank You, Joel</a></li>
+                    <li><a href="#">Totemic Intersections</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#" routerLink="/about">About</a></li>
+</ul> 
 </div>
 <router-outlet></router-outlet>

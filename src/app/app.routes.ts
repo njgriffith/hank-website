@@ -5,6 +5,8 @@ import { IrelandComponent } from './travels/ireland/ireland.component';
 import { GreeceComponent } from './travels/greece/greece.component';
 import { NewMexicoComponent } from './travels/new-mexico/new-mexico.component';
 import { ItalyComponent } from './travels/italy/italy.component';
+import { NorthCarolinaComponent } from './travels/north-carolina/north-carolina.component';
+import { AboutComponent } from './about/about.component';
 
 export const routes: Routes = [
     {
@@ -34,5 +36,13 @@ export const routes: Routes = [
     {
         path: 'travels/italy',
         component: ItalyComponent
-    }
+    },
+    {
+        path: 'travels/north-carolina',
+        component: NorthCarolinaComponent
+    },
+    {
+        path: 'about',
+        component: AboutComponent
+    },
 ];

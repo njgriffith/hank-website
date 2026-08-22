@@ -1,0 +1,9 @@
+.art img {
+    width: 67%;
+
+}
+
+.art {
+    display: flex;
+    justify-content: center;
+}
