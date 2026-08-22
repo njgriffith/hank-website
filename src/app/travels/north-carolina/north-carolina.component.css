@@ -1,14 +1,44 @@
-
-.scroll-container {
-  display: flex;
-  height: 100%;
-  overflow-x: scroll;
-  flex-wrap: nowrap;
-  margin: 1.5em;
-  scrollbar-width: auto;
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
-.scroll-container img {
-  flex: 0 0 auto;
-  padding: 10px;
-  height: 80%;
+
+h1 {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-size: 4em;
+}
+
+.selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -30px;
+}
+
+h2 {
+    padding-left: 100px;
+    padding-right: 100px;
+    cursor: pointer;
+}
+
+h2:hover {
+    text-decoration: underline;
+    color: tomato;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 2em;
+}
+
+.gallery img {
+    flex: 1;
+    padding: 10px;
+    height: 50%;
+    max-width: fit-content;
 }

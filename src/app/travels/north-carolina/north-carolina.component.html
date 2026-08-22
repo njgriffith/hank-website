@@ -1,10 +1,8 @@
-<div class="scroll-container">
-    <img src="assets/Ireland/ireland1.jpg">
-    <img src="assets/Ireland/ireland2.jpg">
-    <img src="assets/Ireland/ireland3.jpg">
-    <img src="assets/Ireland/ireland4.jpg">
-    <img src="assets/Ireland/ireland5.jpg">
-    <img src="assets/Ireland/ireland6.jpg">
-    <img src="assets/Ireland/ireland7.jpg">
-    <img src="assets/Ireland/ireland8.jpg">
+<div class="banner">
+    <h1>NORTH CAROLINA</h1>
+</div>
+
+<div class="gallery">
+    <img *ngFor="let img of imageKeys" [ngSrc]="'assets/' + images[img].src" [width]="images[img].width"
+        [height]="images[img].height" />
 </div>
