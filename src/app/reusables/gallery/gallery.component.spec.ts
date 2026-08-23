@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatDialog } from '@angular/material/dialog';
 import { provideRouter } from '@angular/router';
 
 import { GalleryComponent } from './gallery.component';
@@ -10,7 +11,10 @@ describe('GalleryComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [GalleryComponent],
-      providers: [provideRouter([])]
+      providers: [
+        provideRouter([]),
+        { provide: MatDialog, useValue: { open: jasmine.createSpy('open') } }
+      ]
     })
     .compileComponents();
     

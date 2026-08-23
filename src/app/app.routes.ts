@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { TravelsComponent, travelGalleryMap } from './travels/travels.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AboutComponent } from './about/about.component';
-import { GalleryComponent } from './gallery/gallery.component';
+import { GalleryComponent } from './reusables/gallery/gallery.component';
 import { PortfolioComponent, portfolioGalleryMap } from './portfolio/portfolio.component';
 
 export const routes: Routes = [
