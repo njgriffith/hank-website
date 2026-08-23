@@ -7,7 +7,7 @@ export const galleryMap: Record<string, { title: string; key: string; image: str
   greece: { title: 'Greece', key: 'ELLAS', image: 'assets/ELLAS/ellas-16_.jpg' },
   'new-mexico': { title: 'New Mexico', key: 'New Mexico', image: 'assets/New Mexico/newmex4.jpg' },
   italy: { title: 'Italy', key: 'QUE-BELLA', image: 'assets/QUE-BELLA/bella-01_.jpg' },
-  'north-carolina': { title: 'North Carolina', key: 'Leviathan', image: 'assets/Leviathan/leviathan6.jpg' },
+  'north-carolina': { title: 'North Carolina', key: 'Wisteria', image: 'assets/Leviathan/leviathan6.jpg' },
 };
 
 @Component({

@@ -59,7 +59,7 @@
 .greece:hover::before{
     content: 'GREECE';
 }
-.nc:hover::before{
+.north-carolina:hover::before{
     content: 'NORTH CAROLINA';
 }
 .grid-item:hover img {
