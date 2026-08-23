@@ -1,0 +1,64 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 80vh;
+    width: auto;
+    gap: 2em;
+    margin: 2%;
+}
+
+.grid-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.2s ease;
+}
+
+.grid-item:hover::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.location-name:hover::before {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    font-size: 2.5em;
+    color: black;
+    letter-spacing: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+}
+
+.leviathan:hover::before {
+    content: 'LEVIATHAN';
+}
+.thank-you-joel:hover::before{
+    content: 'THANK YOU, JOEL';
+}
+.wisteria:hover::before{
+    content: 'WISTERIA';
+}
+.totems:hover::before{
+    content: 'TOTEMS';
+}
+.grid-item:hover img {
+    filter: blur(5px);
+}

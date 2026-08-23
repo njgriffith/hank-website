@@ -3,6 +3,8 @@
 </div>
 
 <div class="gallery">
-    <img *ngFor="let img of imageKeys" [ngSrc]="'assets/' + images[img].src" [width]="images[img].width"
-        [height]="images[img].height" (click)="toFullScreen()">
+    <div class="image-wrapper">
+        <img *ngFor="let img of imageKeys" [ngSrc]="'assets/' + images[img].src" [width]="images[img].width"
+            [height]="images[img].height" (click)="toFullScreen()">
+    </div>
 </div>

@@ -1,8 +1,9 @@
 import { Routes } from '@angular/router';
-import { TravelsComponent, galleryMap } from './travels/travels.component';
+import { TravelsComponent, travelGalleryMap } from './travels/travels.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { PortfolioComponent, portfolioGalleryMap } from './portfolio/portfolio.component';
 
 export const routes: Routes = [
     {
@@ -20,30 +21,54 @@ export const routes: Routes = [
     {
         path: 'travels/ireland',
         component: GalleryComponent,
-        data: { folderKey: galleryMap['ireland'].key, galleryTitle: galleryMap['ireland'].title }
+        data: { folderKey: travelGalleryMap['ireland'].key, galleryTitle: travelGalleryMap['ireland'].title }
     },
     {
         path: 'travels/greece',
         component: GalleryComponent,
-        data: { folderKey: galleryMap['greece'].key, galleryTitle: galleryMap['greece'].title }
+        data: { folderKey: travelGalleryMap['greece'].key, galleryTitle: travelGalleryMap['greece'].title }
     },
     {
         path: 'travels/new-mexico',
         component: GalleryComponent,
-        data: { folderKey: galleryMap['new-mexico'].key, galleryTitle: galleryMap['new-mexico'].title }
+        data: { folderKey: travelGalleryMap['new-mexico'].key, galleryTitle: travelGalleryMap['new-mexico'].title }
     },
     {
         path: 'travels/italy',
         component: GalleryComponent,
-        data: { folderKey: galleryMap['italy'].key, galleryTitle: galleryMap['italy'].title }
+        data: { folderKey: travelGalleryMap['italy'].key, galleryTitle: travelGalleryMap['italy'].title }
     },
     {
         path: 'travels/north-carolina',
         component: GalleryComponent,
-        data: { folderKey: galleryMap['north-carolina'].key, galleryTitle: galleryMap['north-carolina'].title }
+        data: { folderKey: travelGalleryMap['north-carolina'].key, galleryTitle: travelGalleryMap['north-carolina'].title }
+    },
+    {
+        path: 'portfolio',
+        component: PortfolioComponent
+    },
+    {
+        path: 'portfolio/wisteria',
+        component: GalleryComponent,
+        data: { folderKey: portfolioGalleryMap['wisteria'].key, galleryTitle: portfolioGalleryMap['wisteria'].title }
+    },
+    {
+        path: 'portfolio/thank-you-joel',
+        component: GalleryComponent,
+        data: { folderKey: portfolioGalleryMap['thank-you-joel'].key, galleryTitle: portfolioGalleryMap['thank-you-joel'].title }
+    },
+    {
+        path: 'portfolio/leviathan',
+        component: GalleryComponent,
+        data: { folderKey: portfolioGalleryMap['leviathan'].key, galleryTitle: portfolioGalleryMap['leviathan'].title }
+    },
+    {
+        path: 'portfolio/totems',
+        component: GalleryComponent,
+        data: { folderKey: portfolioGalleryMap['totems'].key, galleryTitle: portfolioGalleryMap['totems'].title }
     },
     {
         path: 'about',
         component: AboutComponent
-    },
+    }
 ];

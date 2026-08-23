@@ -2,7 +2,7 @@ import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-export const galleryMap: Record<string, { title: string; key: string; image: string }> = {
+export const travelGalleryMap: Record<string, { title: string; key: string; image: string }> = {
   ireland: { title: 'Ireland', key: 'Ireland', image: 'assets/Ireland/ireland9.jpg' },
   greece: { title: 'Greece', key: 'ELLAS', image: 'assets/ELLAS/ellas-16_.jpg' },
   'new-mexico': { title: 'New Mexico', key: 'New Mexico', image: 'assets/New Mexico/newmex4.jpg' },
@@ -18,6 +18,6 @@ export const galleryMap: Record<string, { title: string; key: string; image: str
   styleUrl: './travels.component.css'
 })
 export class TravelsComponent {
-  galleryMap = galleryMap;
+  galleryMap = travelGalleryMap;
   galleryEntries = Object.entries(this.galleryMap);
 }

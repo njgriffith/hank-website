@@ -1,0 +1,9 @@
+<div class="grid-container">
+  <div
+    *ngFor="let entry of galleryEntries"
+    class="grid-item location-name {{ entry[0] }}"
+    [routerLink]="['/portfolio', entry[0]]"
+  >
+    <img [src]="entry[1].image" [alt]="entry[1].title">
+  </div>
+</div>

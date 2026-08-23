@@ -11,51 +11,30 @@ h1 {
     font-size: 4em;
 }
 
-.selector {
-    display: flex;
-    justify-content: center;
-    margin-bottom: -30px;
-}
-
-h2 {
-    padding-left: 100px;
-    padding-right: 100px;
-    cursor: pointer;
-}
-
-h2:hover {
-    text-decoration: underline;
-    color: tomato;
-}
-
 .gallery {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    height: 100%;
-    margin: 2em;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
+    min-width: 100%;
 }
 
-@media (min-width: 900px) {
-    .gallery img {
-        flex: 1;
-        padding: 10px;
-        height: 50%;
-        max-width: fit-content;
-        cursor: pointer;
-    }
+.image-wrapper {
+    height: 40vh;
+    flex-grow: 1;
 }
 
-@media (max-width: 900px) {
-    .gallery img {
-        flex: 1;
-        padding: 10px;
-        width: fit-content;
-        max-width: 95%;
-        height: auto;
-    }
+img {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    margin: 10px;
 }
 
-.gallery img:hover {
-    scale: 1.05;
+img:hover {
+    scale: 1.01;
+    transition-duration: 0.4s;
 }
