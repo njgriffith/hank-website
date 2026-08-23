@@ -1,12 +1,8 @@
 import { Routes } from '@angular/router';
-import { TravelsComponent } from './travels/travels.component';
+import { TravelsComponent, galleryMap } from './travels/travels.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { IrelandComponent } from './travels/ireland/ireland.component';
-import { GreeceComponent } from './travels/greece/greece.component';
-import { NewMexicoComponent } from './travels/new-mexico/new-mexico.component';
-import { ItalyComponent } from './travels/italy/italy.component';
-import { NorthCarolinaComponent } from './travels/north-carolina/north-carolina.component';
 import { AboutComponent } from './about/about.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 export const routes: Routes = [
     {
@@ -23,23 +19,28 @@ export const routes: Routes = [
     },
     {
         path: 'travels/ireland',
-        component: IrelandComponent
+        component: GalleryComponent,
+        data: { folderKey: galleryMap['ireland'].key, galleryTitle: galleryMap['ireland'].title }
     },
     {
         path: 'travels/greece',
-        component: GreeceComponent
+        component: GalleryComponent,
+        data: { folderKey: galleryMap['greece'].key, galleryTitle: galleryMap['greece'].title }
     },
     {
         path: 'travels/new-mexico',
-        component: NewMexicoComponent
+        component: GalleryComponent,
+        data: { folderKey: galleryMap['new-mexico'].key, galleryTitle: galleryMap['new-mexico'].title }
     },
     {
         path: 'travels/italy',
-        component: ItalyComponent
+        component: GalleryComponent,
+        data: { folderKey: galleryMap['italy'].key, galleryTitle: galleryMap['italy'].title }
     },
     {
         path: 'travels/north-carolina',
-        component: NorthCarolinaComponent
+        component: GalleryComponent,
+        data: { folderKey: galleryMap['north-carolina'].key, galleryTitle: galleryMap['north-carolina'].title }
     },
     {
         path: 'about',
