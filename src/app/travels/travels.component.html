@@ -1,17 +1,6 @@
 <div class="grid-container">
-  <div class="grid-item location-name ireland" routerLink="/travels/ireland">
-    <img src="assets/Ireland/ireland9.jpg" alt="Ireland">
-  </div>
-  <div class="grid-item location-name greece" routerLink="/travels/greece">
-    <img src="assets/ELLAS/ellas-16_.jpg" alt="Greece">
-  </div>
-  <div class="grid-item location-name new-mexico" routerLink="/travels/new-mexico">
-    <img src="assets/New Mexico/newmex4.jpg" alt="New Mexico">
-  </div>
-  <div class="grid-item location-name italy" routerLink="/travels/italy">
-    <img src="assets/QUE-BELLA/bella-01_.jpg" alt="Italy">
-  </div>
-  <div class="grid-item location-name nc" routerLink="/travels/north-carolina">
-    <img src="assets/Leviathan/leviathan6.jpg" alt="North Carolina">
+  <div *ngFor="let entry of galleryEntries" class="grid-item location-name {{ entry[0] }}"
+    [routerLink]="['/travels', entry[0]]">
+    <img [src]="entry[1].image" [alt]="entry[1].title">
   </div>
 </div>

@@ -47,20 +47,17 @@
     font-style: italic;
 }
 
-.ireland:hover::before {
-    content: 'IRELAND';
+.leviathan:hover::before {
+    content: 'LEVIATHAN';
 }
-.italy:hover::before{
-    content: 'ITALY';
+.thank-you-joel:hover::before{
+    content: 'THANK YOU, JOEL';
 }
-.new-mexico:hover::before{
-    content: 'NEW MEXICO';
+.wisteria:hover::before{
+    content: 'WISTERIA';
 }
-.greece:hover::before{
-    content: 'GREECE';
-}
-.north-carolina:hover::before{
-    content: 'NORTH CAROLINA';
+.totems:hover::before{
+    content: 'TOTEMS';
 }
 .grid-item:hover img {
     filter: blur(5px);
